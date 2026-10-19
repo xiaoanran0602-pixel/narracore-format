@@ -1,0 +1,2051 @@
+{
+  "meta": {
+    "main_repo_head": "9c781b162ab26d2010fc3ca8f2430bac4e80cb6a",
+    "note": "期望值全部由主仓库 Python 纯函数实际运行产出；生成命令见 src/analysis/README.md"
+  },
+  "payloads": {
+    "zh": {
+      "items": [
+        {
+          "item_type": "outline",
+          "blocks": [
+            {
+              "id": "o1",
+              "type": "action",
+              "text": "大纲条目应被忽略。"
+            }
+          ]
+        },
+        {
+          "item_type": "manuscript",
+          "blocks": [
+            {
+              "id": "b1",
+              "type": "action",
+              "text": "片头引言，不属于任何场。"
+            },
+            {
+              "id": "b2",
+              "type": "scene_heading",
+              "text": "第 1 场 实验室 日 内",
+              "scene_id": "s1"
+            },
+            {
+              "id": "b3",
+              "type": "action",
+              "text": "张三盯着屏幕，双手悬停。"
+            },
+            {
+              "id": "b4",
+              "type": "character",
+              "text": "常家青"
+            },
+            {
+              "id": "b5",
+              "type": "dialogue",
+              "text": "本质上还是烧开水。"
+            },
+            {
+              "id": "b6",
+              "type": "character",
+              "text": "常家青　"
+            },
+            {
+              "id": "b7",
+              "type": "parenthetical",
+              "text": "（压低声音）"
+            },
+            {
+              "id": "b8",
+              "type": "dialogue",
+              "text": "对，别碰阀门。"
+            },
+            {
+              "id": "b9",
+              "type": "action",
+              "text": ""
+            },
+            {
+              "id": "b10",
+              "type": "scene_heading",
+              "text": "第 2 场 走廊 夜 内",
+              "scene_id": "s2"
+            },
+            {
+              "id": "b11",
+              "type": "action",
+              "text": "走廊灯忽明忽暗。"
+            },
+            {
+              "id": "b12",
+              "type": "character",
+              "text": "李四"
+            },
+            {
+              "id": "b13",
+              "type": "dialogue",
+              "text": "谁在那儿？"
+            }
+          ]
+        },
+        {
+          "item_type": "manuscript",
+          "blocks": [
+            {
+              "id": "b14",
+              "type": "action",
+              "text": "第二条文稿的块，接在第 2 场之后。"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "items": [
+        {
+          "item_type": "manuscript",
+          "blocks": [
+            {
+              "id": "e1",
+              "type": "scene_heading",
+              "text": "INT. LAB - DAY",
+              "scene_id": "s1"
+            },
+            {
+              "id": "e2",
+              "type": "action",
+              "text": "Wires everywhere. A monitor hums 😀 oddly."
+            },
+            {
+              "id": "e3",
+              "type": "dialogue",
+              "text": "Careful now."
+            },
+            {
+              "id": "e4",
+              "type": "scene_heading",
+              "text": "EXT. ROOF - NIGHT",
+              "scene_id": "s2"
+            },
+            {
+              "id": "e5",
+              "type": "action",
+              "text": "Wind."
+            }
+          ]
+        }
+      ]
+    },
+    "no_scene": {
+      "items": [
+        {
+          "item_type": "manuscript",
+          "blocks": [
+            {
+              "id": "n1",
+              "type": "action",
+              "text": "没有场景头的段落。"
+            },
+            {
+              "id": "n2",
+              "type": "dialogue",
+              "text": "也没有对白归属。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "executors": {
+    "zh": {
+      "words": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "b2",
+            "b3",
+            "b4",
+            "b5",
+            "b6",
+            "b7",
+            "b8",
+            "b9"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 54,
+            "unit": "chars"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "b10",
+            "b11",
+            "b12",
+            "b13",
+            "b14"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 45,
+            "unit": "chars"
+          }
+        }
+      ],
+      "dialogue_ratio": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "b2",
+            "b3",
+            "b4",
+            "b5",
+            "b6",
+            "b7",
+            "b8",
+            "b9"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 0.296296,
+            "unit": "ratio"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "b10",
+            "b11",
+            "b12",
+            "b13",
+            "b14"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 0.111111,
+            "unit": "ratio"
+          }
+        }
+      ],
+      "scenes": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "b2"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 1,
+            "unit": "scenes"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "b10"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 1,
+            "unit": "scenes"
+          }
+        }
+      ],
+      "characters": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "b4",
+            "b6"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 2,
+            "unit": "count",
+            "label": "常家青"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "b12"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 1,
+            "unit": "count",
+            "label": "李四"
+          }
+        }
+      ],
+      "action_density": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "b2",
+            "b3",
+            "b4",
+            "b5",
+            "b6",
+            "b7",
+            "b8",
+            "b9"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 12,
+            "unit": "chars"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "b10",
+            "b11",
+            "b12",
+            "b13",
+            "b14"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 26,
+            "unit": "chars"
+          }
+        }
+      ]
+    },
+    "en": {
+      "words": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 67,
+            "unit": "chars"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "e4",
+            "e5"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 22,
+            "unit": "chars"
+          }
+        }
+      ],
+      "dialogue_ratio": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 0.179104,
+            "unit": "ratio"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "e4",
+            "e5"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 0.0,
+            "unit": "ratio"
+          }
+        }
+      ],
+      "scenes": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "e1"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 1,
+            "unit": "scenes"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "e4"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 1,
+            "unit": "scenes"
+          }
+        }
+      ],
+      "characters": [],
+      "action_density": [
+        {
+          "scene_id": "s1",
+          "source_block_ids": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 41,
+            "unit": "chars"
+          }
+        },
+        {
+          "scene_id": "s2",
+          "source_block_ids": [
+            "e4",
+            "e5"
+          ],
+          "confidence": 1.0,
+          "analysis_version": "1.0",
+          "payload": {
+            "value": 5,
+            "unit": "chars"
+          }
+        }
+      ]
+    },
+    "no_scene": {
+      "words": [],
+      "dialogue_ratio": [],
+      "scenes": [],
+      "characters": [],
+      "action_density": []
+    }
+  },
+  "scene_material": {
+    "versions": {
+      "evidence_map": "evidence-map-1",
+      "scene_schema": "scene.cinematic.v1",
+      "analyzer": "1.0",
+      "ai_scoring": "ai-2.0",
+      "rule_baseline": "rule-baseline-1"
+    },
+    "scene_blocks_zh_s1": [
+      {
+        "id": "b2",
+        "type": "scene_heading",
+        "text": "第 1 场 实验室 日 内",
+        "ordinal": 1
+      },
+      {
+        "id": "b3",
+        "type": "action",
+        "text": "张三盯着屏幕，双手悬停。",
+        "ordinal": 2
+      },
+      {
+        "id": "b4",
+        "type": "character",
+        "text": "常家青",
+        "ordinal": 3
+      },
+      {
+        "id": "b5",
+        "type": "dialogue",
+        "text": "本质上还是烧开水。",
+        "ordinal": 4
+      },
+      {
+        "id": "b6",
+        "type": "character",
+        "text": "常家青　",
+        "ordinal": 5
+      },
+      {
+        "id": "b7",
+        "type": "parenthetical",
+        "text": "（压低声音）",
+        "ordinal": 6
+      },
+      {
+        "id": "b8",
+        "type": "dialogue",
+        "text": "对，别碰阀门。",
+        "ordinal": 7
+      }
+    ],
+    "scene_blocks_zh_s2": [
+      {
+        "id": "b10",
+        "type": "scene_heading",
+        "text": "第 2 场 走廊 夜 内",
+        "ordinal": 1
+      },
+      {
+        "id": "b11",
+        "type": "action",
+        "text": "走廊灯忽明忽暗。",
+        "ordinal": 2
+      },
+      {
+        "id": "b12",
+        "type": "character",
+        "text": "李四",
+        "ordinal": 3
+      },
+      {
+        "id": "b13",
+        "type": "dialogue",
+        "text": "谁在那儿？",
+        "ordinal": 4
+      },
+      {
+        "id": "b14",
+        "type": "action",
+        "text": "第二条文稿的块，接在第 2 场之后。",
+        "ordinal": 5
+      }
+    ],
+    "scene_blocks_zh_missing": [],
+    "scene_blocks_en_s1": [
+      {
+        "id": "e1",
+        "type": "scene_heading",
+        "text": "INT. LAB - DAY",
+        "ordinal": 1
+      },
+      {
+        "id": "e2",
+        "type": "action",
+        "text": "Wires everywhere. A monitor hums 😀 oddly.",
+        "ordinal": 2
+      },
+      {
+        "id": "e3",
+        "type": "dialogue",
+        "text": "Careful now.",
+        "ordinal": 3
+      }
+    ],
+    "render_zh_s1": "[1] [scene_heading] 第 1 场 实验室 日 内\n[2] [action] 张三盯着屏幕，双手悬停。\n[3] [character] 常家青\n[4] [dialogue] 本质上还是烧开水。\n[5] [character] 常家青　\n[6] [parenthetical] （压低声音）\n[7] [dialogue] 对，别碰阀门。",
+    "render_en_s1": "[1] [scene_heading] INT. LAB - DAY\n[2] [action] Wires everywhere. A monitor hums 😀 oddly.\n[3] [dialogue] Careful now.",
+    "fingerprint_zh_s1": "aea4ae851f1cdf68dc80b8c376211201c581fbadfb8a49851b83b14d88838203",
+    "fingerprint_zh_s1_reordered": "bbaf72584f22a09ccc9806ae4420855442318c6f23554b282d46fe7c5d597a80",
+    "map_evidence": [
+      {
+        "case": {
+          "evidence": "压低声音",
+          "cited": []
+        },
+        "block_ids": [
+          "b7"
+        ],
+        "reason": null
+      },
+      {
+        "case": {
+          "evidence": "场",
+          "cited": []
+        },
+        "block_ids": [
+          "b2"
+        ],
+        "reason": null
+      },
+      {
+        "case": {
+          "evidence": "不存在的句子",
+          "cited": []
+        },
+        "block_ids": [],
+        "reason": "no_match"
+      },
+      {
+        "case": {
+          "evidence": "",
+          "cited": []
+        },
+        "block_ids": [],
+        "reason": "empty_evidence"
+      },
+      {
+        "case": {
+          "evidence": "   ",
+          "cited": []
+        },
+        "block_ids": [],
+        "reason": "empty_evidence"
+      },
+      {
+        "case": {
+          "evidence": "张三",
+          "cited": [
+            99
+          ]
+        },
+        "block_ids": [],
+        "reason": "out_of_range"
+      },
+      {
+        "case": {
+          "evidence": "张三",
+          "cited": [
+            "2"
+          ]
+        },
+        "block_ids": [],
+        "reason": "out_of_range"
+      },
+      {
+        "case": {
+          "evidence": "李四",
+          "cited": [
+            2
+          ]
+        },
+        "block_ids": [],
+        "reason": "text_mismatch"
+      },
+      {
+        "case": {
+          "evidence": "常家青 本质上还是烧开水。",
+          "cited": [
+            3,
+            4
+          ]
+        },
+        "block_ids": [
+          "b4",
+          "b5"
+        ],
+        "reason": null
+      },
+      {
+        "case": {
+          "evidence": "张三  盯着屏幕",
+          "cited": [
+            2
+          ]
+        },
+        "block_ids": [],
+        "reason": "text_mismatch"
+      },
+      {
+        "case": {
+          "evidence": "本质上还是烧开水",
+          "cited": []
+        },
+        "block_ids": [
+          "b5"
+        ],
+        "reason": null
+      },
+      {
+        "case": {
+          "evidence": null,
+          "cited": [
+            2
+          ]
+        },
+        "block_ids": [],
+        "reason": "empty_evidence"
+      },
+      {
+        "case": {
+          "evidence": "张三",
+          "cited": "2"
+        },
+        "block_ids": [
+          "b3"
+        ],
+        "reason": null
+      },
+      {
+        "case": {
+          "evidence": "张三",
+          "cited": null
+        },
+        "block_ids": [
+          "b3"
+        ],
+        "reason": null
+      }
+    ]
+  },
+  "scoring": {
+    "normalize_character_name": [
+      {
+        "raw": "张三",
+        "normalized": "张三"
+      },
+      {
+        "raw": " 张三 ",
+        "normalized": "张三"
+      },
+      {
+        "raw": "张　三",
+        "normalized": "张 三"
+      },
+      {
+        "raw": "张  三",
+        "normalized": "张 三"
+      },
+      {
+        "raw": "A　B\tC  D",
+        "normalized": "A B\tC D"
+      },
+      {
+        "raw": "　",
+        "normalized": ""
+      }
+    ],
+    "char_count": [
+      {
+        "text": "",
+        "count": 0
+      },
+      {
+        "text": "abc",
+        "count": 3
+      },
+      {
+        "text": "中文三个",
+        "count": 4
+      },
+      {
+        "text": "emoji😀one",
+        "count": 9
+      },
+      {
+        "text": "😀😀",
+        "count": 2
+      }
+    ],
+    "compute_scene_score": [
+      {
+        "spans": [],
+        "chars": 0,
+        "score": 100
+      },
+      {
+        "spans": [],
+        "chars": 57,
+        "score": 100
+      },
+      {
+        "spans": [
+          [
+            0,
+            10,
+            1.0
+          ]
+        ],
+        "chars": 10,
+        "score": 0
+      },
+      {
+        "spans": [
+          [
+            0,
+            50,
+            0.5
+          ]
+        ],
+        "chars": 100,
+        "score": 75
+      },
+      {
+        "spans": [
+          [
+            0,
+            50,
+            0.25
+          ],
+          [
+            10,
+            60,
+            1.0
+          ]
+        ],
+        "chars": 60,
+        "score": 13
+      },
+      {
+        "spans": [
+          [
+            0,
+            1,
+            0.5
+          ]
+        ],
+        "chars": 100,
+        "score": 100
+      },
+      {
+        "spans": [
+          [
+            3,
+            8,
+            1.0
+          ],
+          [
+            5,
+            9,
+            0.25
+          ]
+        ],
+        "chars": 10,
+        "score": 48
+      }
+    ],
+    "rule_baseline_zh_s1": {
+      "kind": "rule_baseline",
+      "version": "rule-baseline-1",
+      "reference_only": true,
+      "indicators": {
+        "has_action": true,
+        "has_dialogue": true,
+        "has_character": true,
+        "action_block_count": 1,
+        "dialogue_block_count": 2,
+        "character_block_count": 2,
+        "action_char_coverage": 0.2222
+      }
+    },
+    "rule_baseline_empty": {
+      "kind": "rule_baseline",
+      "version": "rule-baseline-1",
+      "reference_only": true,
+      "indicators": {
+        "has_action": false,
+        "has_dialogue": false,
+        "has_character": false,
+        "action_block_count": 0,
+        "dialogue_block_count": 0,
+        "character_block_count": 0,
+        "action_char_coverage": 0.0
+      }
+    }
+  },
+  "render_guard": {
+    "keys": {
+      "style": true,
+      "chartOption": true,
+      "backgroundColor": true,
+      "styled": false,
+      "my_x_field": true,
+      "(xy)": false,
+      "内容": false,
+      "xaxis": false,
+      "123": false
+    },
+    "find": [
+      {
+        "value": {
+          "output": {
+            "summary": "干净"
+          },
+          "problems": []
+        },
+        "hits": []
+      },
+      {
+        "value": {
+          "output": {
+            "summary": "脏"
+          },
+          "style": "bold"
+        },
+        "hits": [
+          "style"
+        ]
+      },
+      {
+        "value": {
+          "output": {
+            "summary": "嵌套"
+          },
+          "meta": {
+            "series": [
+              1,
+              2
+            ]
+          }
+        },
+        "hits": [
+          "meta.series"
+        ]
+      },
+      {
+        "value": [
+          {
+            "svg": "<a/>"
+          },
+          {
+            "ok": 1
+          }
+        ],
+        "hits": [
+          "[0].svg"
+        ]
+      },
+      {
+        "value": "字符串值不扫描 style svg",
+        "hits": []
+      }
+    ]
+  },
+  "score_ai_findings": {
+    "valid": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b3"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 6,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "medium",
+            "evidence": "张三盯着屏幕",
+            "suggestion": "换成可拍动作",
+            "start": 14,
+            "end": 20,
+            "spans": [
+              [
+                14,
+                20
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b5"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 17,
+          "unit": "penalty_points",
+          "label": "abstract_psychology",
+          "details": {
+            "severity": "high",
+            "evidence": "本质上还是烧开水。",
+            "suggestion": "转台词与表情",
+            "start": 31,
+            "end": 40,
+            "spans": [
+              [
+                31,
+                40
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "本场动作主导，对白点题。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 78,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "cross_block_evidence": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b4",
+          "b5"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 6,
+          "unit": "penalty_points",
+          "label": "unplayable_direction",
+          "details": {
+            "severity": "low",
+            "evidence": "常家青 本质上还是烧开水。",
+            "suggestion": "拆开引用",
+            "start": 27,
+            "end": 40,
+            "spans": [
+              [
+                27,
+                30
+              ],
+              [
+                31,
+                40
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "引用跨两个块。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 94,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "whitespace_folded_evidence": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "证据带多余空白。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "unknown_type": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "有一条未知类型。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "unknown_severity": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "有一条未知严重度。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "malformed_item": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b3"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 3,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "suggestion": "",
+            "start": 14,
+            "end": 20,
+            "spans": [
+              [
+                14,
+                20
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "夹了一条非对象。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "no_problems_field": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "只有总结。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "empty_problems": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "确实没有问题。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 100,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "empty_summary": [],
+    "rendering_key": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "脏输出",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "mixed_valid_and_bad": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b3"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 3,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "suggestion": "",
+            "start": 14,
+            "end": 20,
+            "spans": [
+              [
+                14,
+                20
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "一好一坏。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "out_of_range_ordinal": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "越界引用。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": null,
+              "invalid_count": 1,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "duplicate_low_first": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b3"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 11,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "high",
+            "evidence": "张三盯着屏幕",
+            "suggestion": "高",
+            "start": 14,
+            "end": 20,
+            "spans": [
+              [
+                14,
+                20
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "重复举证：先低后高。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 89,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "duplicate_high_first": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b3"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 11,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "high",
+            "evidence": "张三盯着屏幕",
+            "suggestion": "高",
+            "start": 14,
+            "end": 20,
+            "spans": [
+              [
+                14,
+                20
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "重复举证：先高后低。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 89,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "ambiguous_no_ordinal": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 0,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "low",
+            "evidence": "场",
+            "suggestion": "",
+            "start": 4,
+            "end": 5,
+            "spans": [
+              [
+                4,
+                5
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "全场搜索命中多块。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 100,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "suggestion_null": [
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b3"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "value": 3,
+          "unit": "penalty_points",
+          "label": "weak_visible_action",
+          "details": {
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "suggestion": "None",
+            "start": 14,
+            "end": 20,
+            "spans": [
+              [
+                14,
+                20
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "s1",
+        "source_block_ids": [
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "confidence": 0.5,
+        "analysis_version": "ai-2.0",
+        "payload": {
+          "label": "summary",
+          "details": {
+            "text": "建议字段为 null。",
+            "scoring": {
+              "rule_version": "ai-2.0",
+              "score": 97,
+              "invalid_count": 0,
+              "scene_chars": 54,
+              "baseline": {
+                "kind": "rule_baseline",
+                "version": "rule-baseline-1",
+                "reference_only": true,
+                "indicators": {
+                  "has_action": true,
+                  "has_dialogue": true,
+                  "has_character": true,
+                  "action_block_count": 1,
+                  "dialogue_block_count": 2,
+                  "character_block_count": 2,
+                  "action_char_coverage": 0.2222
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "score_ai_findings_inputs": {
+    "valid": {
+      "output": {
+        "summary": "本场动作主导，对白点题。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "medium",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": "换成可拍动作"
+          },
+          {
+            "type": "abstract_psychology",
+            "severity": "high",
+            "evidence": "本质上还是烧开水。",
+            "blocks": [
+              4
+            ],
+            "suggestion": "转台词与表情"
+          }
+        ]
+      }
+    },
+    "cross_block_evidence": {
+      "output": {
+        "summary": "引用跨两个块。",
+        "problems": [
+          {
+            "type": "unplayable_direction",
+            "severity": "low",
+            "evidence": "常家青 本质上还是烧开水。",
+            "blocks": [
+              3,
+              4
+            ],
+            "suggestion": "拆开引用"
+          }
+        ]
+      }
+    },
+    "whitespace_folded_evidence": {
+      "output": {
+        "summary": "证据带多余空白。",
+        "problems": [
+          {
+            "type": "unclear_space",
+            "severity": "low",
+            "evidence": "张三  盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": "理清空间"
+          }
+        ]
+      }
+    },
+    "unknown_type": {
+      "output": {
+        "summary": "有一条未知类型。",
+        "problems": [
+          {
+            "type": "not_a_type",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": ""
+          }
+        ]
+      }
+    },
+    "unknown_severity": {
+      "output": {
+        "summary": "有一条未知严重度。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "extreme",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": ""
+          }
+        ]
+      }
+    },
+    "malformed_item": {
+      "output": {
+        "summary": "夹了一条非对象。",
+        "problems": [
+          "garbage",
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": ""
+          }
+        ]
+      }
+    },
+    "no_problems_field": {
+      "output": {
+        "summary": "只有总结。"
+      }
+    },
+    "empty_problems": {
+      "output": {
+        "summary": "确实没有问题。",
+        "problems": []
+      }
+    },
+    "empty_summary": {
+      "output": {
+        "summary": "   ",
+        "problems": []
+      }
+    },
+    "rendering_key": {
+      "output": {
+        "summary": "脏输出",
+        "problems": []
+      },
+      "style": "red"
+    },
+    "mixed_valid_and_bad": {
+      "output": {
+        "summary": "一好一坏。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": ""
+          },
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "不存在的证据",
+            "blocks": [
+              2
+            ],
+            "suggestion": ""
+          }
+        ]
+      }
+    },
+    "out_of_range_ordinal": {
+      "output": {
+        "summary": "越界引用。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              99
+            ],
+            "suggestion": ""
+          }
+        ]
+      }
+    },
+    "duplicate_low_first": {
+      "output": {
+        "summary": "重复举证：先低后高。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": "低"
+          },
+          {
+            "type": "weak_visible_action",
+            "severity": "high",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": "高"
+          }
+        ]
+      }
+    },
+    "duplicate_high_first": {
+      "output": {
+        "summary": "重复举证：先高后低。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "high",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": "高"
+          },
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": "低"
+          }
+        ]
+      }
+    },
+    "ambiguous_no_ordinal": {
+      "output": {
+        "summary": "全场搜索命中多块。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "场",
+            "blocks": [],
+            "suggestion": ""
+          }
+        ]
+      }
+    },
+    "suggestion_null": {
+      "output": {
+        "summary": "建议字段为 null。",
+        "problems": [
+          {
+            "type": "weak_visible_action",
+            "severity": "low",
+            "evidence": "张三盯着屏幕",
+            "blocks": [
+              2
+            ],
+            "suggestion": null
+          }
+        ]
+      }
+    }
+  }
+}

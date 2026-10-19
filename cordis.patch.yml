@@ -1,0 +1,14 @@
+# DSH bundle patch（DeepSeek Harness）：把本包注册为一个 stdio MCP 服务器。
+# 安装：dsh plugin add narracore-format
+# DSH 用官方 @deepseek-ai/dsh-mcp-client 拉起本包的 bin（narracore-format），
+# 工具以 mcp__narracore__* 出现在代理工具箱。
+- insert:
+    - id: narracore-format
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: narracore
+        transport: stdio
+        command: npx
+        args:
+          - '-y'
+          - narracore-format@latest

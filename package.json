@@ -1,0 +1,60 @@
+{
+  "name": "narracore-format",
+  "version": "0.1.0",
+  "description": "Free, local MCP server and DSH plugin for screenplay formatting — the open-source core of the Narracore toolkit (narracore.cn)",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "narracore-format": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js --target=node22",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "screenplay",
+    "screenwriting",
+    "fountain",
+    "formatting",
+    "typesetting",
+    "narracore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoanran0602-pixel/narracore-format.git"
+  },
+  "homepage": "https://github.com/xiaoanran0602-pixel/narracore-format#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.23.13",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

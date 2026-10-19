@@ -1,3 +1,5 @@
+English | [Español](README.es.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-Hant.md)
+
 <p align="center"><img src="assets/hero.svg" alt="Narracore Format — free, local screenplay formatting for AI agents" width="840"></p>
 
 # Narracore Format

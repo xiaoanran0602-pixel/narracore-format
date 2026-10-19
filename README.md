@@ -1,11 +1,14 @@
+<p align="center"><img src="assets/hero.svg" alt="Narracore Format — free, local screenplay formatting for AI agents" width="840"></p>
+
 # Narracore Format
 
 **Free, local, unlimited screenplay formatting for AI agents.** An open-source MCP server
 (and [DSH](https://github.com/deepseek-ai/deepseek-harness) plugin) that turns raw or loosely
-formatted screenplay text — Chinese, English, Japanese broadcast-drama format, Chinese
-colon-style dialogue scripts, or mixed — into professionally structured screenplay blocks and
-typeset plain text on the same fixed typewriter character grid as
-[narracore.cn](https://narracore.cn?utm_source=github-plugin).
+formatted screenplay text into professionally structured screenplay blocks and typeset plain
+text — **Chinese, English, or mixed — including Japanese broadcast-drama format and Chinese
+colon-style dialogue scripts. The layout engine picks the right track automatically: a
+33-char × 38-line CJK grid or a 61 × 55 Latin grid**, the same fixed typewriter character
+grid as [narracore.cn](https://narracore.cn?utm_source=github-plugin).
 
 - **Free forever** — runs on your machine, no account, no key, no quota, no network calls
 - **Deterministic** — pure rule-based engine, no LLM inside; same input always yields the
@@ -16,6 +19,113 @@ typeset plain text on the same fixed typewriter character grid as
 Part of the [Narracore](https://narracore.cn?utm_source=github-plugin) toolkit — the
 long-form co-writing workbench. Looking for print-ready **PDF export** or the full
 story-continuity tooling? See [the ecosystem](#ecosystem) below.
+
+## Example
+
+Rough text in — typeset screenplay out. Both directions below are real engine output.
+
+<details open>
+<summary><b>中文（CJK 33×38 字格轨）</b></summary>
+
+Input — loosely formatted text, one element per line:
+
+```text
+第 1 场 内 老式放映厅 - 夜
+
+放映机的光柱切开黑暗，尘埃在光里悬浮。
+常家青坐在最后一排，手里攥着一张褪色的电影票。
+
+常家青
+（低声）
+如果胶片还在，就能证明那晚的一切。
+
+检票员从阴影里走出来，把手电筒照在票面上。
+
+检票员
+这张票，二十年前就该作废了。
+
+常家青站起身。光柱突然熄灭。
+
+切至黑暗
+```
+
+Output — `plain_text` from `format_screenplay` (scene heading, action, character,
+parenthetical, dialogue, right-aligned transition — all on the fixed grid):
+
+```text
+
+第 1 场 内 老式放映厅 - 夜
+
+
+放映机的光柱切开黑暗，尘埃在光里悬浮。
+
+
+常家青坐在最后一排，手里攥着一张褪色的电影票。
+
+
+                       常家青
+                    （低声）
+          如果胶片还在，就能证明那晚的一切。
+
+
+检票员从阴影里走出来，把手电筒照在票面上。
+
+
+                       检票员
+          这张票，二十年前就该作废了。
+
+
+常家青站起身。光柱突然熄灭。
+
+
+                                                          切至黑暗
+```
+
+</details>
+
+<details>
+<summary><b>English (Latin 61×55 grid)</b></summary>
+
+Input:
+
+```text
+INT. PROJECTION BOOTH - NIGHT
+
+The projector beam cuts through the dark.
+
+CHANG
+(quietly)
+If the reel still exists,
+it proves that night was real.
+
+CUT TO BLACK.
+```
+
+Output:
+
+```text
+
+INT. PROJECTION BOOTH - NIGHT
+
+
+The projector beam cuts through the dark.
+
+
+                   CHANG
+             (quietly)
+         If the reel still exists,
+
+         it proves that night was real.
+
+
+                                                CUT TO BLACK.
+```
+
+</details>
+
+The same call also returns typed `blocks` (scene / action / character / parenthetical /
+dialogue / transition / shot / note), page stats, and machine-readable diagnostics — feed
+those blocks back to any other tool in this package for analysis or conversion.
 
 ## Install
 
